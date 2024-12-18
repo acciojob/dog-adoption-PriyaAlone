@@ -1,16 +1,50 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Breeds</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: inline-block;
+            margin: 20px;
+        }
+        a img {
+            width: 200px;
+            height: auto;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        a img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <h1>Explore Dog Breeds</h1>
+    <p>Click on a dog breed to learn more about it!</p>
+    <ul>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Golden_Retriever" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Golden_Retriever_portrait.jpg" alt="Golden Retriever">
+            </a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/Poodle" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/White_Miniature_Poodle.jpg/800px-White_Miniature_Poodle.jpg" alt="Poodle">
+            </a>
+        </li>
+    </ul>
 </body>
-
 </html>
